@@ -3,31 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-       <title>Formulario Laura</title>
+       <title>Formulario Profe Laura</title>
        <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
     <form action="codigo.php">
         <fieldset>
-            <legend>Datos Personales</legend>
+            <legend>Ficha de Datos Personales</legend>
             <label> Nombre      : </label>
             <input type="text" placeholder="Nombres" maxlength="20" required> <br> <br>
             <label> Apellido    : </label>
             <input type="text" placeholder="Apellido" maxlength="20" required> <br> <br>
             <label> Edad        : </label> 
             <input type="number" min="1" max="120" required> <br> <br>
-            <label> Email       :</label>
+            <label> Correo Electronico       :</label>
             <input type="email" placeholder="ejemplo@gmail.com" required> <br><br>
             <label>Nacionalidad :</label>
             <select>
                 <option value="Argentina"> Argentina </option>
                 <option value="Peruana"> Peruana </option>
                 <option value="Estadounidense"> Estadounidense </option>
+                <option value="Colombiana"> Colombiana </option>
             </select> <br> <br>
             <fieldset>
                 <legend> Genero </legend>
                     <label><input type="radio" name ="genero" value="Femenino"> Femenino </label>
                     <label><input type="radio" name ="genero" value="Masculino"> Masculino </label>
+                    <label><input type="radio" name ="genero" value="No binario"> No binario </label>
                     <label><input type="radio" name ="genero" value="Otro"> Otro </label>
             </fieldset> <br><br>
             <!-- <fieldset> -->
@@ -38,6 +40,8 @@
             </fieldset> <br><br>  -->
             <fieldset>
                 <legend>Domicilio</legend>
+                <label> Ciudad      : </label>
+                <input type="text" placeholder="Nombre de ciudad" maxlength="25" > <br> <br>
                 <label> Calle      : </label>
                 <input type="text" placeholder="Nombre de calle" maxlength="20" > <br> <br>
                 <label> Numero    : </label>
@@ -45,7 +49,7 @@
             </fieldset>
         </fieldset>
         <!-- <button>Enviar</button> -->
-        <input type="button" value="Submit">
+        <input type="button" value="Enviar">
     </form>
 </body>
 </html>
